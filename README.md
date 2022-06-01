@@ -1,2 +1,2 @@
-# goit-markup-hw-04
-home work 4
+# goit_markup_hw_02
+Second homework on GoIT courses
