@@ -164,6 +164,9 @@ body{
     text-align: center;
     margin: 0 auto;
     max-width: 1600px;
+    
+    background-image: url("../images/hero-main-photo.jpg");
+    background-repeat: no-repeat;
 }
 
 .main-title {
