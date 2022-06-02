@@ -164,9 +164,15 @@ body{
     text-align: center;
     margin: 0 auto;
     max-width: 1600px;
-    
-    background-image: url("../images/hero-main-photo.jpg");
+}
+.overlay{
+    height: 600px;
+    max-width: 1600;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-main-photo.jpg");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main-title {
