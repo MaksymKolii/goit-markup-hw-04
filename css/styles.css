@@ -117,6 +117,7 @@ body{
     color: var(--accent-color);
     margin-right: 93px;
 }
+
 .logo-dark {
     color: var(--logo-dark-color);
 }
@@ -168,6 +169,7 @@ body{
     background: var(--main-bg-dark-color);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-color: #C4C4C4;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-main-photo.jpg");
     text-align: center;
     margin: 0 auto;
@@ -365,8 +367,38 @@ body{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 16px;
     letter-spacing: var(--primary-letter-spacing);
 }
+.social-list{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+.social-list-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    fill: #AFB1B8;
+    background-color: var(--main-white-color);
+    border-radius: 50%;
+}
+.social-list-item:not(:last-child){
+    margin-right: 10px;
+}
+.team-list .social-list-link:hover .social-list-icon,
+.team-list .social-list-link:focus .social-list-icon
+{
+    fill: var(--main-white-color);
+}
+
+/* .social-list-link:hover,
+.social-list-link:focus
+ {
+    background-color: var(--accent-color);
+} */
 
 /* ======================== /TEAM ========================================== */
 /* ===================== /MAIN ====================================== */
@@ -396,11 +428,26 @@ body{
 .footer-link-location{
     color: var(--main-white-color)
 }
-
+.footer-title{
+    color: var(--main-white-color);
+}
 .footer-link:hover,
 .footer-link:focus{
     color: var(--accent-color);
 }
+.footer-social-list .social-list-link{
+    width: 44px;
+    height: 44px;
+    fill: var(--main-white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.social-list-link:hover,
+.social-list-link:focus
+ {
+    background-color: var(--accent-color);
+}
+
+
 /* ============================= /FOOTER ========================= */
 
 /* ============================= PORTFOLIO html ====================== */
