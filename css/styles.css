@@ -135,8 +135,6 @@ body{
 .nav-link, 
 .header-link-phone,
 .header-link-mail{
-    display: flex;
-    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -148,30 +146,35 @@ body{
     color: var(--main-p-color);
 }
 
-.mail-icon, .phone-icon{
+.mail-icon, 
+.phone-icon{
     fill: var(--main-p-color);
     margin-right: 10px;
 }
+
+/* .header-link-phone:hover.phone-icon 
+.header-link-mail:hover.mail-icon,
+.header-link-phone:focus.phone-icon 
+.header-link-mail:focus.mail-icon
+{
+    fill: var(--accent-color);
+} */
 
 .nav-link:hover, 
 .header-link-phone:hover, 
 .header-link-mail:hover,
 .nav-link:focus,
 .header-link-phone:focus,
-.header-link-mail:focus{
+.header-link-mail:focus
+{
     color: var(--accent-color);
 }
 
 .link-active {
     color: var(--accent-color);
 }
-/* .header-link-phone:hover .phone-icon 
-.header-link-mail:hover .mail-icon,
-.header-link-phone:focus .phone-icon 
-.header-link-mail:focus .mail-icon
-{
-    fill: var(--accent-color);
-} */
+
+
 .phone-icon:hover,
 .mail-icon:hover,
 .phone-icon:focus,
