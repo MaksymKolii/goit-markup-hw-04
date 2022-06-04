@@ -144,13 +144,15 @@ body{
     color: var(--main-p-color);
 }
 
-.mail-icon{
+.mail-icon, .phone-icon{
     fill: var(--main-p-color);
     margin-right: 10px;
 }
 
 .mail-icon:hover,
-.mail-icon:focus
+.mail-icon:focus,
+.phone-icon:hover,
+.phone-icon:focus
 {
     fill: var(--accent-color);
 }
