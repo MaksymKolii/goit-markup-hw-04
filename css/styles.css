@@ -72,7 +72,9 @@ body{
     overflow: hidden; 
     } 
     .section{
+        max-width: 1600px;
         padding: 94px 0;
+        margin: 0 auto;
     }
     .container{
         width: 1200px;
@@ -141,10 +143,16 @@ body{
 .header-link-mail{
     color: var(--main-p-color);
 }
-.header-link-phone::before{
-   display: block; 
-   content: " ";
-   
+
+.mail-icon{
+    fill: var(--main-p-color);
+    margin-right: 10px;
+}
+
+.mail-icon:hover,
+.mail-icon:focus
+{
+    fill: var(--accent-color);
 }
 
 .nav-link:hover, 
@@ -241,6 +249,17 @@ body{
     margin: 15px;
     flex-basis: calc((100% - 120px) / 4);
 }
+.feature-item-icon-wrapper{
+    display: flex;
+    /* content: " "; */
+    width: 270px; 
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background: var(--main-bg-lite-color);
+    border-radius: 4px;
+} 
 
 /* ==== Второй способ добавления элементов ======
  Получается что калькулятор не правильно работает 
@@ -372,7 +391,6 @@ body{
 }
 .social-list{
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: center;
 }
 .social-list-link{
@@ -401,6 +419,50 @@ body{
 } */
 
 /* ======================== /TEAM ========================================== */
+/* ===== CLIENTS ===================================== */
+
+.clients-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.clients-item{
+    flex-basis: calc((100% - 180px) / 6);
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+
+.clients-item-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    box-sizing: border-box;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;;
+}
+.clients-list-icon{
+    width: 106px;
+    height:60px;
+    fill: #AFB1B8;
+}
+.clients-item-link:hover,
+.clients-item-link:focus
+{
+    border: 1px solid var(--accent-color);
+}
+.clients-item-link:hover .clients-list-icon,
+.clients-item-link:focus .clients-list-icon
+{
+    fill: var(--accent-color);
+}
+
+
+/* ===== /CLIENTS ===================================== */
+
 /* ===================== /MAIN ====================================== */
 
 /* ============================= FOOTER ========================= */
@@ -430,10 +492,25 @@ body{
 }
 .footer-title{
     color: var(--main-white-color);
+    margin-bottom: 20px;
 }
 .footer-link:hover,
 .footer-link:focus{
     color: var(--accent-color);
+}
+
+.footer-align{
+    display: flex;
+}
+.footer-address-wrapper{
+    margin-top: 60px;
+    margin-right: 70px;
+    margin: 60px 70px 60px 0;
+
+}
+.foter-social-link-wrapper{
+    margin-top: 72px;
+    margin-bottom: 100px;
 }
 .social-list-link.social-footer{
     fill: var(--main-white-color);
