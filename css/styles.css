@@ -28,6 +28,8 @@ section background dark: #2F303A;
     --primary-letter-spacing: 0.03em;
     --secondary-letter-spacing: 0.06em;
     --header-border-color: #ECECEC;
+    --background-color-hero:#C4C4C4;
+    --icons-main-color:#AFB1B8;
 
 }
 
@@ -133,6 +135,8 @@ body{
 .nav-link, 
 .header-link-phone,
 .header-link-mail{
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -149,14 +153,6 @@ body{
     margin-right: 10px;
 }
 
-.mail-icon:hover,
-.mail-icon:focus,
-.phone-icon:hover,
-.phone-icon:focus
-{
-    fill: var(--accent-color);
-}
-
 .nav-link:hover, 
 .header-link-phone:hover, 
 .header-link-mail:hover,
@@ -169,6 +165,20 @@ body{
 .link-active {
     color: var(--accent-color);
 }
+/* .header-link-phone:hover .phone-icon 
+.header-link-mail:hover .mail-icon,
+.header-link-phone:focus .phone-icon 
+.header-link-mail:focus .mail-icon
+{
+    fill: var(--accent-color);
+} */
+.phone-icon:hover,
+.mail-icon:hover,
+.phone-icon:focus,
+.mail-icon:focus
+{
+    fill: var(--accent-color);
+}
 
 /* =================== /HEADER ================================= */
 
@@ -179,7 +189,7 @@ body{
     background: var(--main-bg-dark-color);
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: #C4C4C4;
+    background-color: var(--background-color-hero);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-main-photo.jpg");
     text-align: center;
     margin: 0 auto;
@@ -401,7 +411,7 @@ body{
     justify-content: center;
     width: 44px;
     height: 44px;
-    fill: #AFB1B8;
+    fill: var(--icons-main-color);
     background-color: var(--main-white-color);
     border-radius: 50%;
 }
@@ -443,13 +453,13 @@ body{
     width: 170px;
     height: 92px;
     box-sizing: border-box;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--icons-main-color);
     border-radius: 4px;;
 }
 .clients-list-icon{
     width: 106px;
     height:60px;
-    fill: #AFB1B8;
+    fill: var(--icons-main-color);
 }
 .clients-item-link:hover,
 .clients-item-link:focus
