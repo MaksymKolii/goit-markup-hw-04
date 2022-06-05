@@ -74,9 +74,7 @@ body{
     overflow: hidden; 
     } 
     .section{
-        max-width: 1600px;
         padding: 94px 0;
-        margin: 0 auto;
     }
     .container{
         width: 1200px;
@@ -135,9 +133,11 @@ body{
 .nav-link, 
 .header-link-phone,
 .header-link-mail{
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    align-items: center;
     letter-spacing: 0.02em;
     color: var(--main-h-color);
 }
@@ -148,7 +148,7 @@ body{
 
 .mail-icon, 
 .phone-icon{
-    fill: var(--main-p-color);
+    fill: currentColor;
     margin-right: 10px;
 }
 
@@ -174,7 +174,6 @@ body{
     color: var(--accent-color);
 }
 
-
 .phone-icon:hover,
 .mail-icon:hover,
 .phone-icon:focus,
@@ -190,6 +189,8 @@ body{
 .hero {
     height: 600px;
     background: var(--main-bg-dark-color);
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--background-color-hero);
@@ -421,8 +422,8 @@ body{
 .social-list-item:not(:last-child){
     margin-right: 10px;
 }
-.team-list .social-list-link:hover .social-list-icon,
-.team-list .social-list-link:focus .social-list-icon
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon
 {
     fill: var(--main-white-color);
 }
@@ -483,8 +484,9 @@ body{
 /* ============================= FOOTER ========================= */
 .page-footer {
     background: var(--main-bg-dark-color);
-    padding-top: 45px;
-    padding-bottom: 75px;
+    /* padding-top: 45px;
+    padding-bottom: 75px; */
+    padding: 60px 0;
 
 }
 .logo-footer{
@@ -515,18 +517,16 @@ body{
 }
 
 .footer-align{
+    align-items: baseline;
     display: flex;
 }
 .footer-address-wrapper{
-    margin-top: 60px;
     margin-right: 70px;
-    margin: 60px 70px 60px 0;
-
 }
-.foter-social-link-wrapper{
+/* .foter-social-link-wrapper{
     margin-top: 72px;
     margin-bottom: 100px;
-}
+} */
 .social-list-link.social-footer{
     fill: var(--main-white-color);
     background-color: rgba(255, 255, 255, 0.1);
@@ -577,6 +577,16 @@ body{
 }
 /* ===== /filter ====-=== */
 /* ====== Content =======*/
+
+.content-item-link{
+    display: block;
+}
+.content-item-link:hover,
+.content-item-link:focus{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
+} 
 .content-list{
     display: flex;
     flex-wrap: wrap;
@@ -591,10 +601,7 @@ body{
 .content-item-wpapper{
     border: 1px solid var(--header-border-color);
     border-top: none;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 24px;
-    padding-right: auto;
+    padding: 20px 24px;
 }
 
 .content-title{
@@ -603,8 +610,6 @@ body{
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-h-color);
-
-    /* margin-left: 24px; */
     margin-bottom: 4px;
 }
 .content-text{
@@ -613,8 +618,8 @@ body{
     line-height: 1.88;
     letter-spacing: var(--primary-letter-spacing);
     color: var(--main-p-color);
-
-    /* margin-left: 24px; */
 }
+
+
 /* ====== /Content =======*/
 /* ============================= /PORTFOLIO html ====================== */
