@@ -30,6 +30,7 @@ section background dark: #2F303A;
     --header-border-color: #ECECEC;
     --background-color-hero:#C4C4C4;
     --icons-main-color:#AFB1B8;
+    --content-border-color:#EEEEEE;
 
 }
 
@@ -583,8 +584,8 @@ body{
 }
 .content-item-link:hover,
 .content-item-link:focus{
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--main-white-color);
+    border: 1px solid var(--content-border-color) ;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
 } 
 .content-list{
